@@ -1,0 +1,23 @@
+body {
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    background-color: #3f3f3f;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.hoverColor:hover{
+    padding: 0 5px;
+    color: #f3c64a;
+    border-color: #f3c64a;
+    background-color: rgba(243, 198, 74, 0.11);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+

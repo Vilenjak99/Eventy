@@ -1,0 +1,54 @@
+.authMainContainer{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.authContainer{
+    width: 40vw;
+    height: 55vh;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side{
+    z-index: 1;
+    height: 60%;
+    width: 25%;
+    position: absolute;
+    padding: 0.5rem;
+    border: 3px solid #f3c64a;
+    border-radius: 10px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms ease-in-out;
+    &.right{
+        right: -15%;
+        &:hover{
+            right: -17%;
+        }
+    }
+    &.left{
+        left: -15%;
+        &:hover{
+            left: -17%
+        }
+    }
+}

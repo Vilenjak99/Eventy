@@ -1,0 +1,8 @@
+.homeGrid{
+    display: grid;
+    grid-template: 1fr 5fr 1fr / 1fr;
+}
+.headerImage{
+    grid-area: 1/1/4/2;
+    max-width: 100%;
+}

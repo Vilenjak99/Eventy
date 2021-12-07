@@ -1,0 +1,19 @@
+.rippleBtn{
+    height: 6vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 4px;
+    color: white;
+    transform: translate(0px, 0px);
+
+}
+.outlined{
+    border: 2px solid white;
+}
+.text{
+    border: none;
+}
+
+.contained{
+    /*background*/
+}
