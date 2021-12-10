@@ -15,11 +15,6 @@ export default function Auth(){
         setIsLoginState(newValue);
     }
 
-    const sideTranzition = ()=>{
-        if(isLoginState){
-
-        }
-    }
     return(
         <div className={'container'}>
             <div className={'authContainer'}>

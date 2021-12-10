@@ -18,7 +18,7 @@ export default function ButtonRipple(props){
                 style={{width:props.width}}
                 onClick={props.onClick}
                 className={`hoverColor rippleBtn ${props.variant} ${props.className}`}
-                >
+                type={props.type}>
             {props.text}
             <TouchRipple ref={rippleRef} center={false} />
         </button>
