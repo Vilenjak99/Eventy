@@ -41,7 +41,7 @@ p{
     grid-area: 1/1/2/2;
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: flex-start;
 }
 .middleSection p{
@@ -55,13 +55,13 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
 }
 .info{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
 }
 .centerContent{
     display: flex;
@@ -93,8 +93,8 @@ p{
 .bottomRightSection{
     grid-area: 1/3/2/4;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     font-size: 0.8rem;
 }
 .upperSection{

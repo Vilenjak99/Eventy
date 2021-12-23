@@ -15,7 +15,7 @@ function Event(){
     return(
         <div className={'container eventGrid'}>
             <div className={'leftSection'}>
-                <img className={'eventImage'} src={'images/food-festival.webp'}/>
+                <img alt='event' className={'eventImage'} src={'images/food-festival.webp'}  />
                 <Button startIcon={<LocationOn/>} variant={'contained'} className={'eventActionBtn'}>{event?.eventLocalization.location.address}</Button>
             </div>
             <div className={'rightSection'}>

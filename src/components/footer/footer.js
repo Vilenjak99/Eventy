@@ -22,13 +22,13 @@ export default function Footer(props){
                 <div className={'middleLeftSection'}>
                     <h2>EXPLORE</h2>
                     <Link to={'/'} onClick={() => props.onClick('home')}>
-                        <p className={'hoverColor'}>HOME</p>
+                        <p className={'hoverColor hoverPadding'}>HOME</p>
                     </Link>
                     <Link to={'/hot-events'} onClick={() => props.onClick('hot-events')}>
-                        <p className={'hoverColor'}>HOT EVENTS</p>
+                        <p className={'hoverColor hoverPadding'}>HOT EVENTS</p>
                     </Link>
                     <Link to={'/community'} onClick={() => props.onClick('community')}>
-                        <p className={'hoverColor'}>COMMUNITY</p>
+                        <p className={'hoverColor hoverPadding'}>COMMUNITY</p>
                     </Link>
                 </div >
                 <div className={'middleCenterSection centerContent'}>
@@ -38,13 +38,13 @@ export default function Footer(props){
                     <div className={'info'}>
                         <h2>INFORMATION</h2>
                         <Link to={'/contact'} onClick={() => props.onClick('contact')}>
-                            <p className={'hoverColor'}>CONTACT US</p>
+                            <p className={'hoverColor hoverPadding'}>CONTACT US</p>
                         </Link>
                         <Link to={'/careers'} onClick={() => props.onClick('careers')}>
-                            <p className={'hoverColor'}>CAREERS</p>
+                            <p className={'hoverColor hoverPadding'}>CAREERS</p>
                         </Link>
                         <Link to={'/blog'} onClick={() => props.onClick('blog')}>
-                            <p className={'hoverColor'}>BLOG</p>
+                            <p className={'hoverColor hoverPadding'}>BLOG</p>
                         </Link>
                     </div>
                     <BasicSelect/>
