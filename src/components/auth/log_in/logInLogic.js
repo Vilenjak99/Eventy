@@ -12,6 +12,7 @@ export function validation(user){
             confirmButtonText: 'ok',
             confirmButtonColor: 'rgb(249 183 0)'
             })
+            console.log("user: " + user)
         return true;
     }
     Swal.fire({

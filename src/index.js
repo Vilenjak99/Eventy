@@ -12,12 +12,14 @@ import PageNotFound from "./routes/page_not_found/pageNotFound";
 import Grow from '@material-ui/core/Grow';
 import Auth from "./routes/auth/auth";
 import AddEvent from "./routes/add_event/addEvent";
+import CarouselEvents from "./components/carousel/carouselEvents";
+import MyEvents from "./routes/my_events/myEvents";
+
 
 
 function App(){
     const [currentPage, setCurrentPage] = useState(null);
-
-
+      
     const handleClick = (newValue) => {
         setCurrentPage(newValue);
     };
@@ -32,10 +34,16 @@ function App(){
                         <Auth/>
                     </Route>
                     <Route exact path={'/hot-events'}>
-                        <Event/>
+                        <CarouselEvents/>
                     </Route>
+                    <Route exact path={'/event:slug?'}>
+                        <Event/>
+                    </Route>   
                     <Route exact path={'/add-event'}>
                         <AddEvent/>
+                    </Route>
+                    <Route exact path={'/my-events'}>
+                        <MyEvents/>
                     </Route>
                     <Route exact path={'/'}>
                         <Grow>

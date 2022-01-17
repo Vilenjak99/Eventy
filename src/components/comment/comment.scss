@@ -1,0 +1,48 @@
+.commentDiv{
+    width: 80%;
+    display: flex;
+    margin: 10px 0px;
+    & > *{
+        margin: 0px 10px;
+    }
+}
+.commentRight{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    & > *{
+        margin-bottom: 5px;
+        display: flex;
+    }
+
+}
+.userImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.reactionDiv{
+    transform: scale(0.75);
+    font-size: 1.1rem;
+    margin: 0;
+    margin-top: 10px;
+    & > *{
+        margin: 0px 5px;
+    }
+}
+.whoWhen{
+    & > *{
+        margin-right: 10px;
+    }
+}
+.text{
+}
+.showReplies{
+    align-items: center;
+}
+.replies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

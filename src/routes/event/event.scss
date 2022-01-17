@@ -1,3 +1,9 @@
+/* EVENT SECTION */
+.containerr{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
 .eventGrid{
     display: grid;
     grid-template: 1fr/ 1.3fr 1fr;
@@ -12,6 +18,7 @@
 .eventImage{
     grid-area: 1/1/4/4;
     height: 100%;
+    width: 100%;
     max-width: 100%;
 }
 .eventActionBtn{
@@ -19,7 +26,6 @@
 }
 .rightSection{
     grid-area: 1/2/2/3;
-    background-color: black;
     display: grid;
     grid-template: 1fr 4fr 1fr/1fr;
     justify-items: center;
@@ -59,3 +65,35 @@
         grid-area: 1/1/2/2;
     }
 }
+
+/* COMMENT SECTION */
+.commentFlex{
+    display: flex;
+    flex-direction: column;
+}
+
+.commentsHeader{
+    display: flex; 
+    /*for all children*/ 
+    & > *{
+        margin: 7px;
+
+        &:hover{
+            color: #f3c64a;
+            cursor: pointer;
+        }
+    }
+    .hoverColor{
+        font-size: 0.7rem;
+        text-transform: none;
+    }
+    .commentSpan{
+        display: flex;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+
+
+

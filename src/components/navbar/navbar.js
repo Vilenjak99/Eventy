@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import './navbar.scss';
 import {Person,EventNote,AddBox} from '@material-ui/icons';
 import {Box, Button} from "@material-ui/core";
@@ -9,6 +9,10 @@ import MenuItem from '@material-ui/core/MenuItem';
 export default function Navbar(props){
     const [anchorEl, setAnchorEl] = useState(null);
     const [logValue, setLogValue] = useState("Login");
+
+    useEffect(()=>{
+        setLogValue(localStorage.getItem("currUser") ? "Logout" : "LogIn")
+    }, [localStorage.getItem("currUser")])
   
     const handleClose = (event) => {
         setAnchorEl(null);
@@ -16,6 +20,12 @@ export default function Navbar(props){
         props.onClick(word)
         console.log(localStorage.getItem("currUser"));
     };
+
+    const handleLogOut = () => {
+        if(localStorage.getItem("currUser")){
+            localStorage.clear();
+        }
+    }
 
 
     const openMenu = (clickedOn,event) => {
@@ -59,7 +69,7 @@ export default function Navbar(props){
                     <MenuItem onClick={(event)=>handleClose(event)}>My account</MenuItem>
                     </Link>
                     <Link to={'/auth'} className="menuItem hoverColor">
-                    <MenuItem onClick={(event)=>handleClose(event)}>{logValue}</MenuItem>
+                    <MenuItem onClick={(event)=>{handleClose(event); handleLogOut()}}>{logValue}</MenuItem>
                     </Link>
                 </Menu>
             </Box>

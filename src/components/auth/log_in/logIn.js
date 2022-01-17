@@ -14,18 +14,12 @@ export default function LogIn(){
          getAuthorByUsernameOrEmail(username,password).then(item=>validation(item));
     }
 
-    const handleLogout = () => {
-        setUsername("");
-        setPassword("");
-        localStorage.clear();
-      };
     return(
         <div className={'container authMainContainer'}>
             <h2>Log in</h2>
             <Input color={'secondary'} placeholder={'email/username'} value={username} onChange={e=>setUsername(e.target.value)}/>
             <Input color={'secondary'} placeholder={'password'} value={password} onChange={e=>setPassword(e.target.value)}/>
             <ButtonRipple text={'LOG IN'} width={'60%'} onClick={handleLogin}/>
-            <ButtonRipple text={'LOG OUT'} width={'60%'} onClick={handleLogout}/>
         </div>
     );
 }

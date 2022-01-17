@@ -1,0 +1,44 @@
+.grid-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template: 5fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+}
+#img{
+    grid-area: 1/1/2/4;
+    background-image: url("../../../public/images/new-year.jpg");
+}
+#title{
+    text-align: center;
+    grid-area: 2/1/3/4;
+}
+#description{
+    text-align: center;
+    grid-area: 3/1/4/4;
+}
+
+.btn{
+    height: 20%;
+    text-align: center;
+    grid-area: 1/1/2/4;
+}
+#arrow{
+    margin-left: 7px;
+    transition: all 90ms ease-in-out;
+}
+#link{
+    grid-area: 4/3/5/4;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    &:hover{
+        p{
+            color: #f3c64a;
+        }
+        #arrow{
+            margin-left: 15px;
+            font-size: 1.7rem;  
+        }
+        
+    }
+}
