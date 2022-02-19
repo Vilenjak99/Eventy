@@ -4,6 +4,11 @@
     height: 100%;
     grid-template: 5fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
 }
+#date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #img{
     grid-area: 1/1/2/4;
     background-image: url("../../../public/images/new-year.jpg");
@@ -14,6 +19,12 @@
 }
 #description{
     text-align: center;
+    justify-content: center;
+    grid-area: 3/1/4/4;
+}
+#content{
+    text-align: center;
+    justify-content: center;
     grid-area: 3/1/4/4;
 }
 
@@ -29,7 +40,7 @@
 #link{
     grid-area: 4/3/5/4;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     &:hover{
         p{

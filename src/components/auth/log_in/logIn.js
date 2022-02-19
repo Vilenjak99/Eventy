@@ -18,7 +18,7 @@ export default function LogIn(){
         <div className={'container authMainContainer'}>
             <h2>Log in</h2>
             <Input color={'secondary'} placeholder={'email/username'} value={username} onChange={e=>setUsername(e.target.value)}/>
-            <Input color={'secondary'} placeholder={'password'} value={password} onChange={e=>setPassword(e.target.value)}/>
+            <Input color={'secondary'} placeholder={'password'} value={password} type="password" onChange={e=>setPassword(e.target.value)}/>
             <ButtonRipple text={'LOG IN'} width={'60%'} onClick={handleLogin}/>
         </div>
     );

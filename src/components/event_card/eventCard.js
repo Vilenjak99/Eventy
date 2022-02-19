@@ -25,7 +25,9 @@ export default function EventCard(props) {
             <h2 id="title" aria-label="title">{props.event.eventLocalization.title}</h2>
             <h3 id="description">{props.event.eventLocalization.description}</h3>
             <p id="content">{props.event.eventLocalization.content}</p>
-            <p id="date">{formatDate(new Date(Date.parse(props.event.dateCreated)))}</p>
+            <div id="date">
+                <p >{formatDate(new Date(Date.parse(props.event.dateCreated)))}</p>
+            </div>
             <Button startIcon={<LocationOn/>} variant={'contained'} className={'btn'}>{props.event.eventLocalization.location.city}, {props.event.eventLocalization.location.address}</Button>
             <Link id="link" to={{ pathname: `/event?slug=${props.event.slug}`,state: {ev: props.event}}} onClick={handleClick}>
                 <p>Check details</p>
